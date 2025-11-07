@@ -48,4 +48,4 @@ These applications require the following Python libraries:
 
 Each application requires specific input data in the form of GeoTIFF (`.tif`) files and, for the Debris Flow app, a CSV file. The GUI for each application will prompt you for the required files.
 
-**Note:** As requested, the data files (e.g., DEM, Flow Direction, LHZM, etc.) are not included in this repository. You will need to provide your own data to run the applications.
+**Note:** The data files (e.g., DEM, Flow Direction, LHZM, etc.) are not included in this repository. You will need to provide your own data to run the applications.
