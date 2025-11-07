@@ -23,7 +23,6 @@ OUTPUT (GeoTIFF):
 - 1 = Yellow zone
 - 2 = Red zone
 
-Author: Based on SF.py with bug fixes and manual compliance
 Date: October 2025
 Version: 1.0
 =============================================================================
@@ -45,7 +44,6 @@ from datetime import datetime
 def calculate_slope_height_numba(dem, cell_size, lhzm_mask):
     """
     Calculates slope height using the pure "steepest ascent" methodology,
-    BUT ONLY WITHIN LHZM AREAS (like Java code does).
     This is critical: valley LHZM patches will have small H, slope LHZM will have large H.
     """
     rows, cols = dem.shape
@@ -80,7 +78,7 @@ def calculate_slope_height_numba(dem, cell_size, lhzm_mask):
                         if not (0 <= nr < rows and 0 <= nc < cols) or np.isnan(dem[nr, nc]):
                             continue
                         
-                        # CRITICAL: Stop if neighbor is NOT LHZM (like Java line 1348)
+                        # CRITICAL: Stop if neighbor is NOT LHZM
                         if not lhzm_mask[nr, nc]:
                             continue
                         
