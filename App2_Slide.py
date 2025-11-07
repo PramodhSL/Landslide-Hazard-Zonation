@@ -35,9 +35,7 @@ OUTPUT (GeoTIFF):
 - 2 = Red zone (Rank A only)
 
 NOTE: This is for EXISTING mapped slides, not hazard zones.
-Use App1 (Slope Failure) for LHZM hazard zonation.
 
-Author: Created for manual compliance
 Date: November 2025
 Version: 2.0 (Fixed to use binary slide blocks)
 =============================================================================
