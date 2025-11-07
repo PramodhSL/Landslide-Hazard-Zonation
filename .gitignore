@@ -1,0 +1,32 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore data and output folders
+Newfolder/
+Output/
+Documantation/
+
+# Ignore specific file types
+*.pdf
+*.csv
+*.tfw
+*.tif
+*.tif.aux.xml
+*.tif.ovr
+*.cpg
+*.dbf
+*.nbc
+*.nbi
+
+# Ignore markdown files except README.md
+BUG_ANALYSIS_REPORT.md
+BUG_FIX_APPLIED.md
+CANCEL_BUTTON_FIX.md
+CRITICAL_BUG_FOUND.md
+FINAL_STATUS.md
+LATERAL_SPREADING_OPTIONS.md
+README_APP1_SLOPEFAILURE.md
+SECOND_FIX_APPLIED.md
+SPREADING_EXPLAINED.md
+SPREADING_EXPLAINED.txt
